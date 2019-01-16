@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Superheroes</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+      <div id="title-div">
+            <img src="assets/images/title-pic.jpg" alt=" DC + Marvel Heroes">
+            <br>
+            <button id="title-page" class="btn btn-warning" onclick="startGame()">Start</button>
+      </div>
+      <div class="container" id="hide">
+            <header class="title">
+                  <h1>Superhero Trivia Game</h1>
+                  <h3>Time Remaining: <span id="countdown">60</span></h3>
+            </header>
+
+            <main id="questions" class="block">
+                  <form id="form"></form>
+                  <br>
+                  <button type="submit" form="form" class="btn btn-warning sub-Btn">Check Answers</button>
+            </main>
+
+            <div id="results" class="block">
+                  <ul>
+                        <li>Correct Answers: <span id="correct">0</span></li>
+                        <li>Incorrect Answers: <span id="incorrect">0</span></li>
+                        <li>Unanswered: <span id="unanswered">0</span></li>
+                  </ul>
+            </div>
+
+      </div>
+      <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
